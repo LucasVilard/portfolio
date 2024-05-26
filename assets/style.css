@@ -777,7 +777,7 @@ section:last-child {
 }
 
 .dark-mode .project:nth-child(1) > img {
-  content: url(/assets/img/projects/Egide-dark.png);
+  content: url(img/projects/Egide-dark.png);
 }
 
 @media screen and (max-width: 1050px) {

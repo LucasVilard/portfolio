@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Auteur : Lucas Vilard, Fonction du site : Portfolio. Ce site est le portfolio de Lucas Vilard"
+    />
+    <title>Lucas Vilard • Freelance Designer & Developer</title>
+    <link rel="icon" href="assets/img/personal-logo.svg" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script src="/assets/index.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/52c2953cac.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div id="top"></div>
+    <!-- Trailer -->
+    <div id="trailer"></div>
+    <!-- Frog Sound effect -->
+    <audio id="frog-noise" src="./assets/sound/Frog_sound_effect.mp3"></audio>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+      <div id="nav-logo-section" class="nav-section">
+        <a
+          href="index.html"
+          class="interactible"
+          aria-label="Logo linking to the front-page of the website"
+        >
+          <svg
+            id="site-logo"
+            class="site-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 417.23 489.78"
+          >
+            <path
+              fill="currentColor"
+              d="m394.34,278.11h-30.57c-4.17,0-8.16-1.65-11.1-4.6l-62.4-62.39,104.73-59.46c13.76-7.82,22.23-22.38,22.23-38.17,0-19.26-12.6-36.28-31-41.93l-61.99-19.05c-2.75-29.48-27.52-52.51-57.72-52.51-28.39,0-52,20.43-57,47.44C85.87,59.17-9.49,168.13.75,297.07c.19,2.37.66,4.65,1.36,6.83,4.16,38.85,19.18,75.62,43.44,106.38.08.1.16.21.22.29,39.84,50.35,99.45,79.21,163.58,79.21h1.13c64.17-.33,123.68-29.52,163.28-80.09,23.57-30.12,38.36-66.06,42.77-103.94h-.02c.37-1.61.6-3.26.63-4.94.29-13.03-9.77-22.7-22.81-22.7Zm-172.7,185.22c-1.05.07-2.1.12-3.16.17v-102.11c23.1.82,45.84,4.79,67.81,11.83-14.17,34.49-36.35,65.43-64.65,90.1Zm-50.11-26.14c-16.35-19.34-29.41-40.82-38.93-63.96,21.99-7.05,44.73-11.02,67.83-11.84v102.11c-1.05-.05-2.1-.11-3.14-.18-9.21-8.04-17.87-16.81-25.76-26.14Zm28.9-93.84c-25.24.84-50.07,5.18-74.07,12.95-3.39-10.41-6.08-21.05-8.03-31.84h82.09v18.89Zm92.08,12.94c-23.97-7.76-48.8-12.1-74.03-12.94v-18.89h82.05c-1.95,10.78-4.63,21.42-8.02,31.83Zm-25.99-315.73c9.6,0,17.38,7.78,17.38,17.38s-7.78,17.38-17.38,17.38-17.38-7.78-17.38-17.38,7.78-17.38,17.38-17.38ZM73.15,211.77l53.3-50.7c29.4-29.33,76.99-29.33,106.39.08,14.71,14.71,22.08,33.99,22.08,53.27,0,7.86-1.23,15.73-3.68,23.28l40.45,40.41h-102.09l26.8-26.8c2.46-2.46,4.64-5.14,6.52-7.89,13.54-20.28,11.37-47.95-6.52-65.83-17.82-17.82-45.34-20.07-65.54-6.67-2.9,1.89-5.65,4.13-8.19,6.67l-.14.14-53.45,50.84c-4.64,4.35-11.95,4.2-16.37-.43-4.42-4.64-4.2-11.95.44-16.37Zm-41.05,112.69h67.93c2.16,12.88,5.28,25.57,9.35,37.96-16.88,6.73-33.04,15.18-48.25,25.19-13.71-19.07-23.54-40.49-29.02-63.15Zm40.29,77.33c13.66-8.87,28.13-16.39,43.22-22.45,10.26,25.16,24.4,48.5,42.13,69.48,2.84,3.36,5.78,6.64,8.8,9.86-36.26-8.68-69.06-28.33-94.15-56.9Zm180.02,56.87c21.66-23.12,38.95-50.04,50.87-79.32,15.07,6.05,29.53,13.56,43.2,22.43-25.07,28.54-57.84,48.19-94.07,56.89Zm105.34-71.08c-15.22-10.02-31.39-18.46-48.25-25.18,4.06-12.39,7.19-25.08,9.35-37.94h28.78l.1-.12.14.12h38.86c-5.49,22.64-15.31,44.08-28.98,63.13Z"
+            />
+            <path
+              fill="currentColor"
+              d="m411.3,154.4c-1.45,0-2.83.54-3.93,1.51l-69.93,62.14c-1.2,1.07-1.89,2.6-1.89,4.21,0,3.11,2.53,5.64,5.64,5.64h30.14l-14.47,29.02c-2.02,4.03-.38,8.93,3.65,10.95,4.03,2.02,8.93.38,10.95-3.65l14.83-29.68,21.08,24.12c1.07,1.23,2.63,1.91,4.24,1.91,3.09,0,5.61-2.5,5.61-5.61v-94.63c0-3.27-2.65-5.92-5.92-5.92Z"
+            />
+          </svg>
+        </a>
+        <span>Lucas Vilard</span>
+      </div>
+      <div id="nav-language-section" class="nav-section">
+        <a href="index.html" class="interactible">EN</a>
+        <i class="fa-regular fa-circle"></i>
+        <a href="index_fr.html" class="interactible">FR</a>
+      </div>
+      <div id="nav-link-section" class="nav-section">
+        <a href="#about" class="interactible"
+          >À&nbsp;pr<span class="serif-font">o</span>pos</a
+        >
+        <i class="fa-regular fa-circle"></i>
+        <a href="#work" class="interactible"
+          >Pr<span class="serif-font">o</span>jets</a
+        >
+      </div>
+      <div id="nav-social-section" class="nav-section">
+        <a
+          href="https://www.twitter.com/"
+          target="_blank"
+          class="interactible"
+          aria-label="link redirecting to the website's creator's twitter (now X) account"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          class="interactible"
+          aria-label="link redirecting to the website's creator's linkedin account"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.github.com/"
+          target="_blank"
+          class="interactible"
+          aria-label="link redirecting to the website's creator's github account"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+      <div id="nav-contact-section" class="nav-section">
+        <a href="mailto:lvilard@hotmail.com" class="a-sans-serif interactible"
+          >Contactez-moi</a
+        >
+        <a href="mailto:lvilard@hotmail.com" class="a-serif interactible"
+          >Contactez-moi</a
+        >
+      </div>
+      <div id="nav-theme-toggle-section" class="nav-section">
+        <button
+          class="theme-toggle interactible"
+          aria-label="Theme Toggler button between light and dark mode"
+        >
+          <i class="fa-solid" id="icon-toggle"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+      <section id="main">
+        <div id="text">
+          <div class="line hidden">
+            <p class="word">Lucas</p>
+            <p class="word">Vilard</p>
+          </div>
+          <div class="line hidden">
+            <p class="word">Web</p>
+            <p class="word">Design</p>
+            <p class="word">&</p>
+          </div>
+          <div class="line hidden">
+            <p class="word">Development</p>
+          </div>
+          <div class="line hidden">
+            <a
+              id="tel-link-main"
+              href="tel:+33666496311"
+              class="word fancy interactible"
+              >+33666496311</a
+            >
+          </div>
+          <div class="line hidden">
+            <a
+              id="mail-link-main"
+              href="mailto:lvilard@hotmail.com"
+              class="word fancy interactible"
+              >Email</a
+            >
+            <a
+              id="github-link-main"
+              href="https://www.github.com/"
+              target="_blank"
+              class="word fancy interactible"
+            >
+              Github
+            </a>
+          </div>
+        </div>
+        <a href="#about"
+          ><i class="fa-solid fa-arrow-down hidden interactible"></i
+        ></a>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about section">
+        <h2 class="hidden">
+          <span class="serif-font">Hey !</span> Je suis Lucas
+          <i class="fa-solid fa-frog"></i>,
+        </h2>
+
+        <h2 class="hidden">
+          Un <span class="serif-font dev-font">développeur</span> Front-End de
+        </h2>
+        <h2 class="hidden">
+          <span class="serif-font">vingt-cinq ans</span> actuellement
+        </h2>
+        <h2 class="hidden">
+          localisé<span class="serif-font"> en </span
+          ><span class="about-underline">France</span> !
+        </h2>
+
+        <div class="curriculum">
+          <div class="curriculum-text hidden">
+            <p>
+              J'ai toujours voulu construire et designé, mais plus important,
+              comprendre les autres et être capable de leur offrir ma capacité à
+              les écouter et, si nécessaire, leur offrir des conseils ou des
+              solutions. Après l'obtention de ma Licence en Économie, Management
+              et Finance, j'ai souhaité explorer de nouveaux horizons et
+              découvert la passion que j'ai pour le Développement Web
+            </p>
+            <p>
+              Après avoir obtenu un titre professionel et appris les bases du
+              Développement Web, j'ai été accueilli dans mon premier emploi et
+              l'on m'a confié de participer et de diriger plusieurs projets à
+              RÉSINE Média, une agence de communicatioin
+            </p>
+            <a
+              href="./assets/pdf/Lucas-Vilard-CV.pdf"
+              class="curriculum-btn interactible"
+              download
+              >Téléchargez mon CV</a
+            >
+          </div>
+
+          <!--  profil pic svg animation -->
+          <svg style="opacity: 0; width: 0; height: 0">
+            <defs>
+              <filter id="noise">
+                <feTurbulence
+                  style="transition: all 0.5s ease-in-out"
+                  baseFrequency="0.7,0.8"
+                  seed="0"
+                  type="fractalNoise"
+                  result="static"
+                >
+                  <animate
+                    attributeName="seed"
+                    attributeType="XML"
+                    values="0;100"
+                    dur="500ms"
+                    repeatCount="1"
+                    begin="card.mouseenter; card.mouseout"
+                  />
+                </feTurbulence>
+                <feDisplacementMap
+                  style="transition: all 0.5s ease-in-out"
+                  in="SourceGraphic"
+                  in2="static"
+                  scale="0"
+                >
+                  <animate
+                    attributeName="scale"
+                    attributeType="XML"
+                    values="0;40;0"
+                    dur="500ms"
+                    repeatCount="1"
+                    begin="card.mouseenter; card.mouseout"
+                  />
+                </feDisplacementMap>
+              </filter>
+            </defs>
+          </svg>
+          <div id="card" class="curriculum-img hidden">
+            <img
+              src="./assets/img/profil-picture.jpg"
+              alt="curriculum image. Image shows Lucas Vilard from the front."
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Workflow -->
+      <section id="workflow" class="workflow">
+        <h2 class="hidden">Mon</h2>
+        <h2 class="serif-font hidden">Workflow</h2>
+        <div class="workflow-text hidden">
+          <p>
+            Lorsqu'il s'agit de concevoir des sites web, tous mes projets
+            commencent sur Figma, où nous discutons et essayons de trouver un
+            accord sur la conception et la direction du projet sur lequel nous
+            travaillons ensemble. Le choix des couleurs, des polices, des
+            éléments sur les sites, et la structure globale du design sont des
+            éléments capitaux dans la construction de la meilleure expérience
+            utilisateur qu'Internet a à offrir.
+          </p>
+          <p>
+            I usually work with vanilla HTML, CSS and Javascript for small
+            Front-End project as it allows me to work more freely on the
+            architecture of the project. For bigger Front-End projects, I like
+            to work with React JS alongside Tailwind CSS. Je travaille
+            généralement avec HTML, CSS et Javascript pour les petits projets
+            Front-End car cela permet de travailler plus librement sur
+            l'architecture du projet. Pour les plus gros projets Front-End,
+            j'aime travailler avec React JS et Tailwind CSS.
+          </p>
+          <p>
+            Mes expériences avec les technologies Back-End sont limités mais
+            j'ai déjà travaillé avec NodeJS et PHP par le passé, et je suis
+            toujours ouvert à l'idée d'approfondir mes compétences en
+            technologie Back-End
+          </p>
+        </div>
+        <a href="#work" class="discover-btn interactible hidden"
+          >Déc<span class="serif-font">o</span>uvrez mes pr<span
+            class="serif-font"
+            >o</span
+          >jets !
+        </a>
+      </section>
+
+      <!-- Work -->
+      <section id="work" class="work section">
+        <h2 class="serif-font hidden">Projets</h2>
+        <h2 class="hidden">Récents</h2>
+        <div class="projects-grid hidden">
+          <div class="project interactible">
+            <img
+              src="/assets/img/projects/Egide-light.png"
+              alt="Image présentant le projet Egide, une application permettant aux utilisateur de tester la puissance de leur mot de passe et d'avoir des recommandations au besoin."
+            />
+          </div>
+          <div class="project interactible">
+            <img
+              src="https://images.unsplash.com/photo-1682687982093-4773cb0dbc2e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+              alt=""
+            />
+          </div>
+          <div class="project interactible">
+            <img
+              src="https://images.unsplash.com/photo-1696939811701-cc647cd90431?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
+              alt=""
+            />
+          </div>
+          <div class="project interactible">
+            <img
+              src="https://images.unsplash.com/photo-1696781596199-9454f308078e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt=""
+            />
+          </div>
+          <div class="project interactible">
+            <img
+              src="https://images.unsplash.com/photo-1674684493970-a153e378af72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80"
+              alt=""
+            />
+          </div>
+          <div class="project interactible">
+            <img
+              src="https://images.unsplash.com/photo-1696326892798-e307967fa16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80"
+              alt=""
+            />
+          </div>
+          <div class="project interactible">
+            <img
+              src="https://images.unsplash.com/photo-1696258361221-9f9bc7b99c92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80"
+              alt=""
+            />
+          </div>
+          <div class="project interactible">
+            <img
+              src="https://images.unsplash.com/photo-1692983279086-cd5c7b5f0df8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+              alt=""
+            />
+          </div>
+          <div class="project interactible">
+            <img
+              src="https://images.unsplash.com/photo-1545006398-2cf47cd87b90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1930&q=80"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="faq">
+        <h2 class="hidden">
+          Un <span class="serif-font">espace</span> pour vos
+          <span class="serif-font">Questions</span> !
+        </h2>
+        <div class="q-and-a interactible hidden">
+          <div class="question">
+            <h3>Lucas, quand as tu commencé à coder ?</h3>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="answer">
+            <span
+              >J'ai commencé en 2021 après une année de lutte à rechercher ma
+              passion suite aux difficultés rencontré en 2020 à cause de la
+              Pandémie de Covid 19. J'ai commencé avec des petits projets en
+              HTML et CS, suite à quoi j'ai appris Javascript
+            </span>
+          </div>
+        </div>
+        <div class="q-and-a interactible hidden">
+          <div class="question">
+            <h3>Lucas, es-tu un Designer ou un Développeur ?</h3>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="answer">
+            <span>Je suis les deux, je design et développe avec passion.</span>
+          </div>
+        </div>
+        <div class="q-and-a interactible hidden">
+          <div class="question">
+            <h3>
+              Lucas, combien de temps il te faut pour développer des sites
+              internet aussi cool ?
+            </h3>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="answer">
+            <span
+              >Les projets les plus cours prennent ~2 mois et les plus
+              conséquents 6-8 mois.</span
+            >
+          </div>
+        </div>
+        <div class="q-and-a interactible hidden">
+          <div class="question">
+            <h3>
+              Lucas, pourquoi toutes ces grenouilles??
+              <i class="fa-solid fa-frog"></i>
+            </h3>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="answer"><span>Parce que je les adore !</span></div>
+        </div>
+        <div class="q-and-a interactible hidden">
+          <div class="question">
+            <h3>Lucas, d'où viens tu ?</h3>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="answer">
+            <span>Je viens d'une petite ville du Sud de la France !</span>
+          </div>
+        </div>
+        <div class="q-and-a interactible hidden">
+          <div class="question">
+            <h3>
+              Lucas, combien te temps t'as t-il fallu pour faire ce portfolio ?
+            </h3>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="answer"><span>Environ 3 month.</span></div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <span class="footer-logo hidden">
+        <svg
+          id="site-logo"
+          class="site-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 417.23 489.78"
+        >
+          <path
+            fill="currentColor"
+            d="m394.34,278.11h-30.57c-4.17,0-8.16-1.65-11.1-4.6l-62.4-62.39,104.73-59.46c13.76-7.82,22.23-22.38,22.23-38.17,0-19.26-12.6-36.28-31-41.93l-61.99-19.05c-2.75-29.48-27.52-52.51-57.72-52.51-28.39,0-52,20.43-57,47.44C85.87,59.17-9.49,168.13.75,297.07c.19,2.37.66,4.65,1.36,6.83,4.16,38.85,19.18,75.62,43.44,106.38.08.1.16.21.22.29,39.84,50.35,99.45,79.21,163.58,79.21h1.13c64.17-.33,123.68-29.52,163.28-80.09,23.57-30.12,38.36-66.06,42.77-103.94h-.02c.37-1.61.6-3.26.63-4.94.29-13.03-9.77-22.7-22.81-22.7Zm-172.7,185.22c-1.05.07-2.1.12-3.16.17v-102.11c23.1.82,45.84,4.79,67.81,11.83-14.17,34.49-36.35,65.43-64.65,90.1Zm-50.11-26.14c-16.35-19.34-29.41-40.82-38.93-63.96,21.99-7.05,44.73-11.02,67.83-11.84v102.11c-1.05-.05-2.1-.11-3.14-.18-9.21-8.04-17.87-16.81-25.76-26.14Zm28.9-93.84c-25.24.84-50.07,5.18-74.07,12.95-3.39-10.41-6.08-21.05-8.03-31.84h82.09v18.89Zm92.08,12.94c-23.97-7.76-48.8-12.1-74.03-12.94v-18.89h82.05c-1.95,10.78-4.63,21.42-8.02,31.83Zm-25.99-315.73c9.6,0,17.38,7.78,17.38,17.38s-7.78,17.38-17.38,17.38-17.38-7.78-17.38-17.38,7.78-17.38,17.38-17.38ZM73.15,211.77l53.3-50.7c29.4-29.33,76.99-29.33,106.39.08,14.71,14.71,22.08,33.99,22.08,53.27,0,7.86-1.23,15.73-3.68,23.28l40.45,40.41h-102.09l26.8-26.8c2.46-2.46,4.64-5.14,6.52-7.89,13.54-20.28,11.37-47.95-6.52-65.83-17.82-17.82-45.34-20.07-65.54-6.67-2.9,1.89-5.65,4.13-8.19,6.67l-.14.14-53.45,50.84c-4.64,4.35-11.95,4.2-16.37-.43-4.42-4.64-4.2-11.95.44-16.37Zm-41.05,112.69h67.93c2.16,12.88,5.28,25.57,9.35,37.96-16.88,6.73-33.04,15.18-48.25,25.19-13.71-19.07-23.54-40.49-29.02-63.15Zm40.29,77.33c13.66-8.87,28.13-16.39,43.22-22.45,10.26,25.16,24.4,48.5,42.13,69.48,2.84,3.36,5.78,6.64,8.8,9.86-36.26-8.68-69.06-28.33-94.15-56.9Zm180.02,56.87c21.66-23.12,38.95-50.04,50.87-79.32,15.07,6.05,29.53,13.56,43.2,22.43-25.07,28.54-57.84,48.19-94.07,56.89Zm105.34-71.08c-15.22-10.02-31.39-18.46-48.25-25.18,4.06-12.39,7.19-25.08,9.35-37.94h28.78l.1-.12.14.12h38.86c-5.49,22.64-15.31,44.08-28.98,63.13Z"
+          />
+          <path
+            fill="currentColor"
+            d="m411.3,154.4c-1.45,0-2.83.54-3.93,1.51l-69.93,62.14c-1.2,1.07-1.89,2.6-1.89,4.21,0,3.11,2.53,5.64,5.64,5.64h30.14l-14.47,29.02c-2.02,4.03-.38,8.93,3.65,10.95,4.03,2.02,8.93.38,10.95-3.65l14.83-29.68,21.08,24.12c1.07,1.23,2.63,1.91,4.24,1.91,3.09,0,5.61-2.5,5.61-5.61v-94.63c0-3.27-2.65-5.92-5.92-5.92Z"
+          />
+        </svg>
+      </span>
+      <span class="footer-sup-title hidden">Vous avez un projet en tête?</span>
+      <span class="footer-title serif-font hidden"
+        ><a href="mailto:lvilard@hotmail.com" class="interactible"
+          >Let's talk</a
+        ></span
+      >
+      <div class="footer-bottom hidden">
+        <div class="footer-copyright">
+          <span>2024 &copy;</span>
+        </div>
+
+        <div class="footer-timezone">
+          <span class="footer-small">Heure local : </span>
+          <span id="time-display" class="footer-link"></span>
+        </div>
+
+        <div class="footer-credits">
+          <span class="footer-small">Développé &amp; Désigné par : </span><br />
+          <span class="footer-link">Lucas Vilard</span>
+        </div>
+
+        <div class="footer-socials">
+          <span class="footer-small">Réseaux sociaux :</span><br />
+          <div class="footer-links">
+            <a
+              href="https://linkedin.com/"
+              target="_blank"
+              class="footer-link interactible"
+              >linkedin</a
+            ><a
+              href="https://www.github.com/"
+              target="_blank"
+              class="footer-link interactible"
+              >github</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-availability">
+          <span class="footer-small">Disponibilité pour travailler :</span
+          ><br />
+          <span class="footer-link">Disponible</span>
+        </div>
+
+        <div class="footer-btt-btn interactible">
+          <a href="#top">Retour en haut</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- v.01 :
+  Define project : Personal Portfolio
+  Define sections : Nav > Main > About > Work > Footer
+-->
+
+<!-- v.02 :
+  Add styling elements (color, inspiration from other websites)
+  Add JS (Trail > Dark Mode > Main)
+-->
+
+<!-- v.03 :
+  Work on Footer element
+-->
+
+<!-- v.04 :
+  Added About section
+  Added Work section with images
+-->
+
+<!-- v.05 :
+  Added introduction section with image, description and resume download button
+  Added workflow button
+  Impoved navbar (scroll behavior and get in touch hover effect)
+  Added site's easter egg (click on frogs for a surprise)
+-->
+
+<!-- v.06 :
+  Added transition to card image in about section
+  Added transition to all elements with the Hidden/Show Animation
+
+-->
+
+<!-- WHAT NEEDS TO BE FIXED :
+- About section scroll behavior being on the X axis instead of Y axis ? NO DONT MESS WITH SCROLLING BEHAVIOR TOO MUCH
+- better font? (current : Rubik, a bit too much like average web fonts like Helvetica or Poppins) ==> Montserrat works ok
+- finish workflow section (might get renamed)
+- improve mobile layout for hero section
+- actual links to my social media plateforms
+
+-->
